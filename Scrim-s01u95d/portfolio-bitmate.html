@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="BiteMate - Chef Subscription Platform with Recipe Marketplace - Backend Development Case Study">
+        <title>BiteMate - Chef Recipe Platform | Momina Saeed</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            .tech-stack {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1em;
+                margin: 2em 0;
+            }
+            .tech-badge {
+                background: var(--clr-accent);
+                color: var(--clr-light);
+                padding: 0.5em 1em;
+                border-radius: 20px;
+                font-size: 0.9rem;
+                font-weight: var(--fw-bold);
+            }
+            .project-metrics {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 2em;
+                margin: 3em 0;
+            }
+            .metric-card {
+                background: linear-gradient(135deg, var(--clr-accent) 0%, var(--clr-accent-secondary) 100%);
+                color: var(--clr-light);
+                padding: 2em;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: var(--bs-soft);
+            }
+            .metric-value {
+                font-size: 2.5rem;
+                font-weight: var(--fw-bold);
+                color: var(--clr-light);
+                margin-bottom: 0.5em;
+            }
+            .metric-label {
+                font-size: 1rem;
+                opacity: 0.95;
+            }
+            .feature-list {
+                list-style: none;
+                padding: 0;
+            }
+            .feature-list li {
+                padding: 1em;
+                margin: 1em 0;
+                background: #f5f5f5;
+                border-left: 4px solid var(--clr-accent);
+                border-radius: 5px;
+            }
+            .feature-list li strong {
+                color: var(--clr-accent);
+            }
+            .challenge-solution {
+                margin: 2em 0;
+                padding: 1.5em;
+                background: #f9f9f9;
+                border-radius: 8px;
+                border-left: 4px solid var(--clr-accent-secondary);
+            }
+            .challenge-solution h3 {
+                color: var(--clr-accent);
+                margin-top: 0;
+            }
+            .feature-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1.5em;
+                margin: 2em 0;
+            }
+            .feature-card {
+                background: white;
+                padding: 1.5em;
+                border-radius: 10px;
+                box-shadow: var(--bs-soft);
+                border-top: 3px solid var(--clr-accent);
+            }
+            .feature-card h4 {
+                color: var(--clr-accent);
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/momina saeed.png" alt="Momina Saeed Logo">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>BiteMate</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Chef Subscription & Recipe Marketplace Platform</p>
+            <div style="background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%); padding: 2em; border-radius: 10px; margin: 2em 0; text-align: center; color: white;">
+                <h2 style="margin: 0; font-size: 1.5rem;">Connect Chefs with Food Enthusiasts</h2>
+                <p style="margin: 0.5em 0 0; opacity: 0.9;">Backend Developer • Subscription Platform • Recipe Marketplace • Stripe Integration</p>
+            </div>
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <h2>Project Overview</h2>
+            <p>
+                <strong>BiteMate</strong> is a comprehensive chef subscription and recipe marketplace platform that connects professional chefs with food enthusiasts. As a <strong>Backend Developer</strong> on this company project, I architected and developed a robust backend system enabling chefs to monetize their recipes through subscriptions, premium content, and a unique recipe bidding marketplace. Users can subscribe to their favorite chefs, access exclusive recipes, and participate in a global cookbook community.
+            </p>
+            
+            <p>
+                The platform features a dual monetization model: subscription-based access to chef content and a marketplace where users can bid on exclusive recipes. The backend handles complex subscription management, content access control, payment processing, and recipe auction functionality, all integrated with Stripe for secure payment processing.
+            </p>
+
+            <h2>Key Achievements & Impact</h2>
+            <div class="project-metrics">
+                <div class="metric-card">
+                    <div class="metric-value">2</div>
+                    <div class="metric-label">Post Types</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Stripe</div>
+                    <div class="metric-label">Payment Integration</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Global</div>
+                    <div class="metric-label">Cookbook Feature</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Bidding</div>
+                    <div class="metric-label">Recipe Marketplace</div>
+                </div>
+            </div>
+
+            <h2>Technical Stack</h2>
+            <div class="tech-stack">
+                <span class="tech-badge">Django</span>
+                <span class="tech-badge">Django REST Framework</span>
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">PostgreSQL</span>
+                <span class="tech-badge">Stripe API</span>
+                <span class="tech-badge">RESTful APIs</span>
+                <span class="tech-badge">JWT Authentication</span>
+                <span class="tech-badge">File Upload</span>
+                <span class="tech-badge">Image Processing</span>
+                <span class="tech-badge">Subscription Management</span>
+                <span class="tech-badge">Payment Processing</span>
+            </div>
+
+            <h2>Backend Development Responsibilities</h2>
+            <ul class="feature-list">
+                <li>
+                    <strong>Chef Subscription System:</strong> Designed and implemented a comprehensive subscription model where users can subscribe to individual chefs, gaining access to their exclusive recipe content. Built subscription management endpoints with create, update, cancel, and renewal functionality.
+                </li>
+                <li>
+                    <strong>Recipe Post Management:</strong> Developed a dual-post system supporting both <strong>Free</strong> and <strong>Premium</strong> recipe posts. Implemented access control logic ensuring only subscribed users can view premium content, while free posts remain accessible to all users.
+                </li>
+                <li>
+                    <strong>Stripe Payment Integration:</strong> Integrated Stripe API for secure payment processing, handling subscription payments, one-time payments for premium recipes, and marketplace transactions. Implemented webhook handlers for real-time payment status updates and subscription lifecycle management.
+                </li>
+                <li>
+                    <strong>Recipe Bidding Marketplace:</strong> Built a unique auction system where users can bid on exclusive recipes. Implemented bidding logic, highest bid tracking, bid expiration, and automatic recipe transfer to winning bidders upon auction completion.
+                </li>
+                <li>
+                    <strong>Global Cookbook Feature:</strong> Developed a community-driven global cookbook where recipes from all chefs are aggregated and discoverable. Implemented search, filtering, and categorization features for the global recipe collection.
+                </li>
+                <li>
+                    <strong>Content Access Control:</strong> Designed and implemented sophisticated permission system that checks user subscription status, recipe post type (free/premium), and access rights before serving recipe content. Ensured secure content delivery with proper authorization checks.
+                </li>
+                <li>
+                    <strong>Chef Profile Management:</strong> Built comprehensive chef profiles with subscription pricing, follower counts, recipe statistics, and subscription analytics. Implemented endpoints for chef registration, profile updates, and subscription management.
+                </li>
+                <li>
+                    <strong>User Subscription Management:</strong> Developed user-facing subscription endpoints allowing users to browse available chefs, view subscription plans, subscribe/unsubscribe, and manage their active subscriptions. Implemented subscription history and billing management.
+                </li>
+                <li>
+                    <strong>Recipe CRUD Operations:</strong> Created full recipe management system with image uploads, ingredient lists, step-by-step instructions, cooking time, difficulty level, and nutritional information. Implemented recipe categorization and tagging for better discoverability.
+                </li>
+                <li>
+                    <strong>Notification System:</strong> Implemented notification endpoints for subscription updates, new recipe posts from subscribed chefs, bidding updates, and payment confirmations to keep users engaged with the platform.
+                </li>
+            </ul>
+
+            <h2>Core Features Implemented</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>🍳 Chef Subscription System</h4>
+                    <p>Users can subscribe to individual chefs to access their exclusive recipe content. Subscription management includes pricing tiers, billing cycles, and automatic renewals.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>📝 Dual Post Types</h4>
+                    <p><strong>Free Posts:</strong> Accessible to all users. <strong>Premium Posts:</strong> Exclusive content available only to subscribed users. Access control enforced at API level.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>💰 Stripe Payment Integration</h4>
+                    <p>Complete Stripe integration for subscription payments, one-time recipe purchases, and marketplace transactions. Webhook processing for real-time payment updates.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>🔨 Recipe Bidding Marketplace</h4>
+                    <p>Unique auction system where users bid on exclusive recipes. Features include bid tracking, automatic winner selection, and secure payment processing for winning bids.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>🌍 Global Cookbook</h4>
+                    <p>Community-driven recipe collection aggregating recipes from all chefs. Advanced search, filtering by cuisine, dietary restrictions, and difficulty level.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h4>🔐 Access Control</h4>
+                    <p>Sophisticated permission system ensuring premium content is only accessible to subscribed users, with proper validation at every API endpoint.</p>
+                </div>
+            </div>
+
+            <h2>Technical Challenges & Solutions</h2>
+            
+            <div class="challenge-solution">
+                <h3>Challenge: Dual Content Access Control</h3>
+                <p>
+                    <strong>Problem:</strong> Implementing secure access control for free vs. premium recipe posts, ensuring only subscribed users can access premium content while maintaining performance and preventing unauthorized access.
+                </p>
+                <p>
+                    <strong>Solution:</strong> Created a custom permission class that checks user subscription status before serving recipe content. Implemented database-level filtering using Django ORM to separate free and premium posts efficiently. Added middleware to validate subscription status on premium content requests, returning appropriate error messages for unauthorized access. Cached subscription status to minimize database queries and improve response times.
+                </p>
+            </div>
+
+            <div class="challenge-solution">
+                <h3>Challenge: Recipe Bidding System</h3>
+                <p>
+                    <strong>Problem:</strong> Building a real-time bidding system where multiple users can bid on recipes, tracking highest bids, handling concurrent bids, and automatically processing payments for winning bidders.
+                </p>
+                <p>
+                    <strong>Solution:</strong> Implemented atomic database transactions using Django's `select_for_update()` to prevent race conditions in concurrent bidding scenarios. Created a bidding model with timestamp tracking, bid amount validation, and automatic highest bid updates. Built a background task system to process auction completion, identify winners, and trigger Stripe payment processing. Added real-time bid notifications to keep users informed of bidding activity.
+                </p>
+            </div>
+
+            <div class="challenge-solution">
+                <h3>Challenge: Subscription Lifecycle Management</h3>
+                <p>
+                    <strong>Problem:</strong> Managing complex subscription lifecycles including creation, renewal, cancellation, payment failures, and ensuring users maintain access during valid subscription periods while being restricted after expiration.
+                </p>
+                <p>
+                    <strong>Solution:</strong> Integrated Stripe webhooks to handle subscription events in real-time. Created subscription status tracking with expiration date management. Implemented background jobs to check and update subscription statuses, automatically revoking access for expired subscriptions. Built retry logic for failed payments and grace period handling. Designed database schema with proper indexing for efficient subscription status queries.
+                </p>
+            </div>
+
+            <div class="challenge-solution">
+                <h3>Challenge: Global Cookbook Aggregation</h3>
+                <p>
+                    <strong>Problem:</strong> Aggregating recipes from multiple chefs into a unified global cookbook while maintaining performance, supporting advanced search/filtering, and respecting access control for premium content.
+                </p>
+                <p>
+                    <strong>Solution:</strong> Implemented efficient database queries using `select_related()` and `prefetch_related()` to minimize database hits when aggregating recipes. Created a unified search endpoint that filters by cuisine type, dietary restrictions, difficulty level, and cooking time. Built caching layer for frequently accessed global cookbook data. Implemented pagination to handle large recipe collections efficiently. Added access control checks to show/hide premium content based on user subscription status.
+                </p>
+            </div>
+
+            <div class="challenge-solution">
+                <h3>Challenge: Stripe Webhook Reliability</h3>
+                <p>
+                    <strong>Problem:</strong> Ensuring reliable processing of Stripe webhooks for subscription updates, payment confirmations, and failed payment handling, with proper error handling and idempotency.
+                </p>
+                <p>
+                    <strong>Solution:</strong> Implemented idempotent webhook handlers that check for duplicate event processing using Stripe event IDs. Created comprehensive error handling with logging and retry mechanisms. Built separate handlers for different event types (subscription.created, subscription.updated, payment.succeeded, payment.failed). Added webhook signature verification for security. Implemented database transactions to ensure atomic updates when processing webhook events.
+                </p>
+            </div>
+
+            <h2>Database Architecture</h2>
+            <ul class="feature-list">
+                <li>
+                    <strong>Chef Model:</strong> Stores chef profiles, subscription pricing, follower counts, and subscription statistics. Includes fields for Stripe account integration and subscription management.
+                </li>
+                <li>
+                    <strong>Recipe Model:</strong> Comprehensive recipe data including title, description, ingredients, instructions, images, cooking time, difficulty, cuisine type, and post type (free/premium). Foreign key relationship to Chef.
+                </li>
+                <li>
+                    <strong>Subscription Model:</strong> Tracks user subscriptions to chefs with start date, end date, status (active/cancelled/expired), Stripe subscription ID, and billing information.
+                </li>
+                <li>
+                    <strong>Bid Model:</strong> Manages recipe bidding with user, recipe, bid amount, timestamp, and status (active/won/lost). Includes indexes for efficient querying of highest bids.
+                </li>
+                <li>
+                    <strong>User Model:</strong> Extended Django user model with subscription preferences, payment methods, and activity tracking.
+                </li>
+                <li>
+                    <strong>Payment Model:</strong> Tracks all payment transactions including subscription payments, recipe purchases, and bidding payments with Stripe payment intent IDs.
+                </li>
+            </ul>
+
+            <h2>API Endpoints Developed</h2>
+            
+            <h3>Chef Management</h3>
+            <ul class="feature-list">
+                <li><code>GET /api/chefs/</code> - List all chefs with subscription info</li>
+                <li><code>GET /api/chefs/{id}/</code> - Get chef profile and statistics</li>
+                <li><code>POST /api/chefs/register/</code> - Chef registration</li>
+                <li><code>PUT /api/chefs/{id}/</code> - Update chef profile</li>
+                <li><code>GET /api/chefs/{id}/recipes/</code> - Get chef's recipes</li>
+                <li><code>GET /api/chefs/{id}/subscribers/</code> - Get chef's subscriber count</li>
+            </ul>
+
+            <h3>Recipe Management</h3>
+            <ul class="feature-list">
+                <li><code>GET /api/recipes/</code> - List recipes (filtered by access)</li>
+                <li><code>POST /api/recipes/</code> - Create recipe (chefs only)</li>
+                <li><code>GET /api/recipes/{id}/</code> - Get recipe details (access-controlled)</li>
+                <li><code>PUT /api/recipes/{id}/</code> - Update recipe</li>
+                <li><code>DELETE /api/recipes/{id}/</code> - Delete recipe</li>
+                <li><code>GET /api/recipes/global/</code> - Global cookbook endpoint</li>
+                <li><code>GET /api/recipes/search/</code> - Search recipes</li>
+            </ul>
+
+            <h3>Subscription Management</h3>
+            <ul class="feature-list">
+                <li><code>GET /api/subscriptions/</code> - Get user's active subscriptions</li>
+                <li><code>POST /api/subscriptions/subscribe/</code> - Subscribe to chef</li>
+                <li><code>POST /api/subscriptions/{id}/cancel/</code> - Cancel subscription</li>
+                <li><code>GET /api/subscriptions/chefs/</code> - List subscribed chefs</li>
+            </ul>
+
+            <h3>Bidding System</h3>
+            <ul class="feature-list">
+                <li><code>GET /api/bids/recipes/{recipe_id}/</code> - Get bids for recipe</li>
+                <li><code>POST /api/bids/</code> - Place bid on recipe</li>
+                <li><code>GET /api/bids/user/</code> - Get user's bids</li>
+                <li><code>GET /api/bids/won/</code> - Get won bids</li>
+            </ul>
+
+            <h3>Payment Processing</h3>
+            <ul class="feature-list">
+                <li><code>POST /api/payments/checkout/</code> - Create Stripe checkout session</li>
+                <li><code>POST /api/payments/webhooks/</code> - Stripe webhook endpoint</li>
+                <li><code>GET /api/payments/history/</code> - Get payment history</li>
+            </ul>
+
+            <h2>Business Model Implementation</h2>
+            <div style="background: var(--clr-bg-section); padding: 2em; border-radius: 10px; margin: 2em 0;">
+                <h3 style="color: var(--clr-accent); margin-top: 0;">Monetization Features</h3>
+                <ul class="feature-list" style="background: transparent; border: none; padding: 0.5em 0;">
+                    <li><strong>Subscription Revenue:</strong> Users pay monthly/yearly fees to access chef's premium content</li>
+                    <li><strong>Premium Recipe Posts:</strong> Chefs can monetize individual recipes by marking them as premium</li>
+                    <li><strong>Recipe Bidding:</strong> Exclusive recipes available through auction system, generating additional revenue</li>
+                    <li><strong>Global Cookbook:</strong> Free recipes drive user engagement and discovery, leading to subscriptions</li>
+                </ul>
+            </div>
+
+            <h2>Security & Performance</h2>
+            <ul class="feature-list">
+                <li>
+                    <strong>Authentication & Authorization:</strong> JWT-based authentication with role-based access control. Custom permission classes ensure only subscribed users access premium content.
+                </li>
+                <li>
+                    <strong>Payment Security:</strong> All payment processing handled securely through Stripe API. No sensitive payment data stored on servers. Webhook signature verification prevents unauthorized access.
+                </li>
+                <li>
+                    <strong>Database Optimization:</strong> Strategic use of database indexes on frequently queried fields (subscription status, recipe post type, bid amounts). Query optimization using select_related and prefetch_related.
+                </li>
+                <li>
+                    <strong>Caching Strategy:</strong> Implemented caching for subscription status checks and frequently accessed global cookbook data to reduce database load and improve response times.
+                </li>
+            </ul>
+
+            <h2>Project Details</h2>
+            <p>
+                <strong>Project:</strong> BiteMate - Chef Subscription & Recipe Marketplace Platform<br>
+                <strong>Role:</strong> Backend Developer<br>
+                <strong>Company:</strong> ENIGMATIX<br>
+                <strong>Type:</strong> Company Project, Production Application<br>
+                <strong>Tech Stack:</strong> Django, Django REST Framework, Python, PostgreSQL, Stripe API<br>
+                <strong>Key Features:</strong> Chef Subscriptions, Free/Premium Posts, Recipe Bidding, Global Cookbook, Stripe Integration
+            </p>
+
+            <div style="margin-top: 3em; padding: 2em; background: linear-gradient(135deg, var(--clr-accent) 0%, var(--clr-accent-secondary) 100%); color: var(--clr-light); border-radius: 10px; text-align: center;">
+                <h3 style="margin-top: 0; color: var(--clr-light);">Key Achievement</h3>
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                    Successfully architected and implemented a comprehensive subscription-based recipe platform with dual monetization 
+                    models (subscriptions + marketplace bidding). The backend handles complex access control, payment processing, 
+                    and real-time bidding functionality, demonstrating expertise in building scalable subscription platforms and 
+                    payment integrations.
+                </p>
+            </div>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:momina.professional@gmail.com" class="footer__link">momina.professional@gmail.com</a>
+            <p style="margin: 0.5em 0; font-size: 0.9rem; opacity: 0.8;">Bahawalpur, Punjab, Pakistan | +92 322 4485135 | +92 326 9506008</p>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/momina2211" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>

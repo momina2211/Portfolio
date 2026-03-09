@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Axya - AI-Powered Procurement Orchestration Platform - Backend Development Case Study">
+        <title>Axya - Procurement Orchestration Platform | Momina Saeed</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            .tech-stack {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1em;
+                margin: 2em 0;
+            }
+            .tech-badge {
+                background: var(--clr-accent);
+                color: var(--clr-dark);
+                padding: 0.5em 1em;
+                border-radius: 20px;
+                font-size: 0.9rem;
+                font-weight: var(--fw-bold);
+            }
+            .project-metrics {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 2em;
+                margin: 3em 0;
+            }
+            .metric-card {
+                background: var(--clr-dark);
+                color: var(--clr-light);
+                padding: 2em;
+                border-radius: 10px;
+                text-align: center;
+            }
+            .metric-value {
+                font-size: 2.5rem;
+                font-weight: var(--fw-bold);
+                color: var(--clr-accent);
+                margin-bottom: 0.5em;
+            }
+            .metric-label {
+                font-size: 1rem;
+                opacity: 0.9;
+            }
+            .feature-list {
+                list-style: none;
+                padding: 0;
+            }
+            .feature-list li {
+                padding: 1em;
+                margin: 1em 0;
+                background: #f5f5f5;
+                border-left: 4px solid var(--clr-accent);
+            }
+            .feature-list li strong {
+                color: var(--clr-accent);
+            }
+            .challenge-solution {
+                margin: 2em 0;
+                padding: 1.5em;
+                background: #f9f9f9;
+                border-radius: 8px;
+            }
+            .challenge-solution h3 {
+                color: var(--clr-accent);
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/momina saeed.png" alt="Momina Saeed Logo">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>Axya</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">AI-Powered Procurement Orchestration Platform</p>
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2em; border-radius: 10px; margin: 2em 0; text-align: center; color: white;">
+                <h2 style="margin: 0; font-size: 1.5rem;">Frictionless Procurement for Manufacturing</h2>
+                <p style="margin: 0.5em 0 0; opacity: 0.9;">Backend Developer | Enterprise SaaS Platform</p>
+            </div>
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <h2>Project Overview</h2>
+            <p>
+                <strong>Axya</strong> is an enterprise-grade procurement orchestration platform that revolutionizes manufacturing procurement by removing manual work and keeping buyers, suppliers, and ERPs aligned in real-time. As a backend developer, I contributed to building the core infrastructure that powers RFQ management, purchase order processing, supplier communication, and seamless ERP integrations.
+            </p>
+            
+            <p>
+                The platform serves manufacturing organizations by unifying fragmented procurement workflows across emails, spreadsheets, portals, and ERPs into a single, intelligent system powered by AI automation.
+            </p>
+
+            <h2>Key Achievements & Impact</h2>
+            <div class="project-metrics">
+                <div class="metric-card">
+                    <div class="metric-value">25x</div>
+                    <div class="metric-label">Faster Order Processing</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">54%</div>
+                    <div class="metric-label">Reduction in Late Deliveries</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">100%</div>
+                    <div class="metric-label">Supplier Adoption Rate</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Real-time</div>
+                    <div class="metric-label">ERP Synchronization</div>
+                </div>
+            </div>
+
+            <h2>Technical Stack</h2>
+            <div class="tech-stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Django</span>
+                <span class="tech-badge">FastAPI</span>
+                <span class="tech-badge">PostgreSQL</span>
+                <span class="tech-badge">Redis</span>
+                <span class="tech-badge">Celery</span>
+                <span class="tech-badge">RESTful APIs</span>
+                <span class="tech-badge">JWT Authentication</span>
+                <span class="tech-badge">OAuth2</span>
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">AWS</span>
+                <span class="tech-badge">Message Queue</span>
+                <span class="tech-badge">WebSocket</span>
+            </div>
+
+            <h2>Backend Development Responsibilities</h2>
+            <ul class="feature-list">
+                <li>
+                    <strong>RESTful API Architecture:</strong> Designed and developed scalable REST APIs for order management, RFQ processing, and supplier communication workflows. Implemented comprehensive API versioning and documentation.
+                </li>
+                <li>
+                    <strong>ERP Integration Layer:</strong> Built robust integration connectors for multiple ERP systems (including Genius ERP and custom solutions), enabling real-time bidirectional data synchronization between Axya and client ERPs.
+                </li>
+                <li>
+                    <strong>AI-Powered Data Processing:</strong> Developed backend services for processing unstructured data from emails, PDFs, Excel files, and EDI formats. Integrated OCR technology for automated data extraction and normalization.
+                </li>
+                <li>
+                    <strong>Real-Time Synchronization:</strong> Implemented event-driven architecture using message queues to ensure ERP data stays accurate as supplier updates flow through the system, eliminating manual data entry.
+                </li>
+                <li>
+                    <strong>Supplier Communication Hub:</strong> Built unified communication system that aggregates supplier updates from multiple channels (email, portals, EDI, Excel, PDFs) into a centralized dashboard with intelligent parsing and categorization.
+                </li>
+                <li>
+                    <strong>Automated Workflow Engine:</strong> Developed Celery-based task queue system for automated follow-ups, order confirmations, and milestone tracking. Implemented smart notification triggers based on business rules.
+                </li>
+                <li>
+                    <strong>Database Architecture:</strong> Designed and optimized PostgreSQL database schemas for handling complex procurement data relationships, ensuring data integrity and supporting high-volume transactions.
+                </li>
+                <li>
+                    <strong>Security & Authentication:</strong> Implemented JWT-based authentication and OAuth2 integration for secure API access. Built role-based access control (RBAC) for multi-tenant architecture.
+                </li>
+                <li>
+                    <strong>Performance Optimization:</strong> Optimized database queries, implemented Redis caching strategies, and designed efficient data processing pipelines to handle enterprise-scale workloads.
+                </li>
+                <li>
+                    <strong>Monitoring & Logging:</strong> Integrated comprehensive logging and monitoring solutions to track system performance, identify bottlenecks, and ensure reliable operation in production environments.
+                </li>
+            </ul>
+
+            <h2>Technical Challenges & Solutions</h2>
+            
+            <div class="challenge-solution">
+                <h3>Challenge: Fragmented Data Sources</h3>
+                <p>
+                    <strong>Problem:</strong> Supplier updates arrive through multiple channels (emails, spreadsheets, portals, EDI) with inconsistent formats, making it difficult to maintain a single source of truth.
+                </p>
+                <p>
+                    <strong>Solution:</strong> Developed a unified data ingestion pipeline with intelligent parsing engines that normalize data from various sources. Implemented machine learning models to extract structured information from unstructured emails and documents, ensuring all supplier communications are captured and processed automatically.
+                </p>
+            </div>
+
+            <div class="challenge-solution">
+                <h3>Challenge: Real-Time ERP Synchronization</h3>
+                <p>
+                    <strong>Problem:</strong> Keeping ERP systems synchronized with supplier updates in real-time without manual intervention, while handling different ERP APIs and data formats.
+                </p>
+                <p>
+                    <strong>Solution:</strong> Built an event-driven architecture using message queues (Redis/Celery) that processes supplier updates asynchronously and pushes changes to ERP systems via standardized API adapters. Implemented retry mechanisms, error handling, and transaction rollback capabilities to ensure data consistency.
+                </p>
+            </div>
+
+            <div class="challenge-solution">
+                <h3>Challenge: Scalability & Performance</h3>
+                <p>
+                    <strong>Problem:</strong> Supporting enterprise clients with high-volume procurement operations while maintaining sub-second API response times and processing thousands of supplier communications daily.
+                </p>
+                <p>
+                    <strong>Solution:</strong> Implemented horizontal scaling with Docker containers, optimized database queries with proper indexing, and used Redis for caching frequently accessed data. Designed asynchronous processing for heavy operations and implemented connection pooling for database efficiency.
+                </p>
+            </div>
+
+            <h2>Key Features Developed</h2>
+            <ul class="feature-list">
+                <li>
+                    <strong>Order Management System:</strong> Complete backend for managing purchase orders from creation to delivery, with status tracking, change management, and automated notifications.
+                </li>
+                <li>
+                    <strong>RFQ Management:</strong> Backend services for RFQ creation, distribution to suppliers, response collection, and automated comparison/analysis workflows.
+                </li>
+                <li>
+                    <strong>Supplier Management:</strong> API endpoints for supplier onboarding, profile management, performance tracking, and contract management.
+                </li>
+                <li>
+                    <strong>AI Automation Engine:</strong> Backend infrastructure supporting AI agents that handle repetitive tasks like follow-ups, confirmations, and risk detection.
+                </li>
+                <li>
+                    <strong>Data Extraction Service:</strong> OCR and document processing APIs that extract structured data from PDFs, Excel files, and images.
+                </li>
+                <li>
+                    <strong>Supplier Reporting:</strong> Analytics backend that aggregates supplier performance metrics, delivery rates, and order change statistics for reporting dashboards.
+                </li>
+                <li>
+                    <strong>Departmental Chat Integration:</strong> Real-time messaging backend with WebSocket support for internal team discussions linked to specific orders and RFQs.
+                </li>
+            </ul>
+
+            <h2>Business Impact</h2>
+            <p>
+                The backend infrastructure I helped build enables Axya to deliver measurable results for manufacturing organizations:
+            </p>
+            <ul class="feature-list">
+                <li>Eliminated manual data entry and reconciliation work, freeing buyers to focus on strategic procurement decisions</li>
+                <li>Enabled 100% supplier adoption by meeting suppliers where they work (email, Excel, PDF) without requiring portal access</li>
+                <li>Reduced late deliveries by 54% through early risk detection and proactive alerting systems</li>
+                <li>Accelerated order processing by 25x through automation and streamlined workflows</li>
+                <li>Maintained real-time ERP accuracy, ensuring leadership has reliable, current data for decision-making</li>
+            </ul>
+
+            <h2>Project Details</h2>
+            <p>
+                <strong>Company:</strong> Axya, Inc.<br>
+                <strong>Role:</strong> Backend Developer<br>
+                <strong>Platform:</strong> <a href="https://axya.co/" target="_blank" rel="noopener noreferrer">axya.co</a><br>
+                <strong>Industry:</strong> Enterprise SaaS, Manufacturing Technology<br>
+                <strong>Team Size:</strong> Cross-functional team (Backend, Frontend, AI/ML, DevOps)
+            </p>
+
+            <div style="margin-top: 3em; padding: 2em; background: var(--clr-dark); color: var(--clr-light); border-radius: 10px; text-align: center;">
+                <h3 style="color: var(--clr-accent); margin-top: 0;">Technologies & Skills Demonstrated</h3>
+                <p>
+                    This project showcased expertise in building enterprise-scale backend systems, API design, database architecture, 
+                    system integration, asynchronous processing, and AI/ML integration. It required deep understanding of manufacturing 
+                    procurement workflows and the ability to translate complex business requirements into scalable technical solutions.
+                </p>
+            </div>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:momina.professional@gmail.com" class="footer__link">momina.professional@gmail.com</a>
+            <p style="margin: 0.5em 0; font-size: 0.9rem; opacity: 0.8;">Bahawalpur, Punjab, Pakistan | +92 322 4485135 | +92 326 9506008</p>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/momina2211" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>

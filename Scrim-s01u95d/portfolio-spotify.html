@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Spotify Clone - Full-Stack Music Streaming Platform - Backend Development Case Study">
+        <title>Spotify Clone - Music Streaming Platform | Momina Saeed</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            .tech-stack {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1em;
+                margin: 2em 0;
+            }
+            .tech-badge {
+                background: var(--clr-accent);
+                color: var(--clr-light);
+                padding: 0.5em 1em;
+                border-radius: 20px;
+                font-size: 0.9rem;
+                font-weight: var(--fw-bold);
+            }
+            .project-metrics {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 2em;
+                margin: 3em 0;
+            }
+            .metric-card {
+                background: linear-gradient(135deg, var(--clr-accent) 0%, var(--clr-accent-secondary) 100%);
+                color: var(--clr-light);
+                padding: 2em;
+                border-radius: 10px;
+                text-align: center;
+                box-shadow: var(--bs-soft);
+            }
+            .metric-value {
+                font-size: 2.5rem;
+                font-weight: var(--fw-bold);
+                color: var(--clr-light);
+                margin-bottom: 0.5em;
+            }
+            .metric-label {
+                font-size: 1rem;
+                opacity: 0.95;
+            }
+            .feature-list {
+                list-style: none;
+                padding: 0;
+            }
+            .feature-list li {
+                padding: 1em;
+                margin: 1em 0;
+                background: #f5f5f5;
+                border-left: 4px solid var(--clr-accent);
+                border-radius: 5px;
+            }
+            .feature-list li strong {
+                color: var(--clr-accent);
+            }
+            .challenge-solution {
+                margin: 2em 0;
+                padding: 1.5em;
+                background: #f9f9f9;
+                border-radius: 8px;
+                border-left: 4px solid var(--clr-accent-secondary);
+            }
+            .challenge-solution h3 {
+                color: var(--clr-accent);
+                margin-top: 0;
+            }
+            .code-snippet {
+                background: #1e1e1e;
+                color: #d4d4d4;
+                padding: 1.5em;
+                border-radius: 8px;
+                overflow-x: auto;
+                margin: 1em 0;
+                font-family: 'Courier New', monospace;
+                font-size: 0.9rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/momina saeed.png" alt="Momina Saeed Logo">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>Spotify Clone</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Full-Stack Music Streaming Platform</p>
+            <div style="background: linear-gradient(135deg, #1DB954 0%, #1ed760 100%); padding: 2em; border-radius: 10px; margin: 2em 0; text-align: center; color: white;">
+                <h2 style="margin: 0; font-size: 1.5rem;">AI-Powered Music Streaming with Real-Time Collaboration</h2>
+                <p style="margin: 0.5em 0 0; opacity: 0.9;">Backend Developer • Django REST API • Real-Time WebSockets • Stripe Integration</p>
+                <a href="https://github.com/momina2211/Spotify_Clone" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 1em; padding: 0.5em 1.5em; background: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: all 300ms;">
+                    <i class="fab fa-github" style="margin-right: 0.5em;"></i>View on GitHub
+                </a>
+            </div>
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <h2>Project Overview</h2>
+            <p>
+                <strong>Spotify Clone</strong> is a comprehensive full-stack music streaming platform that replicates and extends core Spotify functionality with advanced features including real-time synchronized playback, AI-powered playlist generation, and subscription management. As the <strong>Backend Developer</strong>, I architected and implemented a robust Django REST API backend supporting 30+ endpoints, real-time WebSocket communication, payment processing, and AI integration.
+            </p>
+            
+            <p>
+                The platform enables artists to upload and manage their music, provides users with subscription-based premium features, supports real-time collaborative listening rooms, and generates intelligent playlists using OpenAI GPT-4. The backend processes 3,724+ lines of production code across multiple Django apps, handling everything from audio analysis to payment webhooks.
+            </p>
+
+            <h2>Key Achievements & Impact</h2>
+            <div class="project-metrics">
+                <div class="metric-card">
+                    <div class="metric-value">30+</div>
+                    <div class="metric-label">REST API Endpoints</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">15+</div>
+                    <div class="metric-label">Database Models</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">3,724+</div>
+                    <div class="metric-label">Lines of Backend Code</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">Real-time</div>
+                    <div class="metric-label">WebSocket Sync</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">86+</div>
+                    <div class="metric-label">Lines Refactored</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">AI</div>
+                    <div class="metric-label">Playlist Generation</div>
+                </div>
+            </div>
+
+            <h2>Technical Stack</h2>
+            <div class="tech-stack">
+                <span class="tech-badge">Django 5.2.11</span>
+                <span class="tech-badge">Django REST Framework</span>
+                <span class="tech-badge">Python 3.11</span>
+                <span class="tech-badge">PostgreSQL</span>
+                <span class="tech-badge">Redis</span>
+                <span class="tech-badge">Celery</span>
+                <span class="tech-badge">Django Channels</span>
+                <span class="tech-badge">WebSocket</span>
+                <span class="tech-badge">Stripe API</span>
+                <span class="tech-badge">OpenAI GPT-4</span>
+                <span class="tech-badge">Librosa</span>
+                <span class="tech-badge">RESTful APIs</span>
+                <span class="tech-badge">JWT Authentication</span>
+                <span class="tech-badge">Docker</span>
+            </div>
+
+            <h2>Backend Development Responsibilities</h2>
+            <ul class="feature-list">
+                <li>
+                    <strong>RESTful API Architecture:</strong> Designed and developed 30+ REST API endpoints using Django REST Framework ViewSets with custom actions. Implemented advanced filtering, search, pagination, and nested routing for music, payments, and user management.
+                </li>
+                <li>
+                    <strong>Real-Time WebSocket Implementation:</strong> Built Django Channels-based WebSocket consumer for synchronized listening rooms, enabling real-time playback synchronization across multiple users with host controls and participant management.
+                </li>
+                <li>
+                    <strong>Stripe Payment Integration:</strong> Implemented complete subscription management system with Stripe Checkout, webhook processing, plan switching, trial periods, and student verification. Created reusable `StripeBaseMixin` eliminating 86+ lines of code duplication.
+                </li>
+                <li>
+                    <strong>AI-Powered Playlist Generation:</strong> Integrated OpenAI GPT-4 API to generate intelligent playlists from natural language prompts, analyzing user preferences and matching songs by audio features (valence, energy, acousticness) with tolerance-based filtering.
+                </li>
+                <li>
+                    <strong>Audio Analysis Pipeline:</strong> Developed Celery background tasks using Librosa to extract audio features (BPM, valence, energy, acousticness) and automatically classify song mood, processing uploads asynchronously without blocking API responses.
+                </li>
+                <li>
+                    <strong>Database Architecture:</strong> Designed 15+ database models with optimized relationships, UUID primary keys, strategic indexing, and proper foreign key constraints. Implemented many-to-many relationships for playlists, genres, and user interactions.
+                </li>
+                <li>
+                    <strong>Background Task Processing:</strong> Configured Celery with Redis broker for async task processing including audio analysis, metadata enrichment, and AI playlist generation, ensuring non-blocking API operations.
+                </li>
+                <li>
+                    <strong>Code Refactoring & Optimization:</strong> Created `StripeBaseMixin` base class pattern with 9 reusable methods, eliminating code redundancy and establishing single source of truth for common Stripe operations across payment endpoints.
+                </li>
+                <li>
+                    <strong>Security & Authentication:</strong> Implemented token-based authentication, role-based access control (User, Artist, Admin), custom permission classes, and comprehensive input validation for secure API access.
+                </li>
+                <li>
+                    <strong>Performance Optimization:</strong> Optimized database queries using `select_related()` and `prefetch_related()`, implemented query filtering at database level, and designed caching strategies with Redis integration.
+                </li>
+            </ul>
+
+            <h2>Key Features Implemented</h2>
+            
+            <h3>🎵 Music Management System</h3>
+            <ul class="feature-list">
+                <li><strong>Song CRUD Operations:</strong> Complete song management with upload, update, delete, and retrieval endpoints with advanced filtering by genre, artist, date, and visibility</li>
+                <li><strong>Album Management:</strong> Album creation, cover image uploads, and song association with favorite functionality</li>
+                <li><strong>Playlist System:</strong> User-created playlists with song reordering, add/remove operations, and playlist sharing</li>
+                <li><strong>Like & Favorite System:</strong> Song and album like/favorite functionality with user-specific tracking</li>
+                <li><strong>Recently Played:</strong> Automatic tracking of user listening history with timestamp management</li>
+                <li><strong>Trending Algorithm:</strong> Time-based trending songs calculation based on play counts and engagement</li>
+                <li><strong>Search & Recommendations:</strong> Multi-field search (title, artist, album, genre) and AI-powered song recommendations</li>
+            </ul>
+
+            <h3>💳 Subscription Management</h3>
+            <ul class="feature-list">
+                <li><strong>Multiple Plan Types:</strong> Free, Individual, Student, Duo, and Family plans with feature differentiation</li>
+                <li><strong>Stripe Checkout Integration:</strong> Secure payment processing with redirect-based checkout flow</li>
+                <li><strong>Webhook Processing:</strong> Event-driven subscription updates handling checkout completion, subscription changes, and payment events</li>
+                <li><strong>Trial Periods:</strong> Automatic 30-day trial management for Individual and Student plans</li>
+                <li><strong>Plan Switching:</strong> Upgrade/downgrade functionality with Stripe proration support</li>
+                <li><strong>Student Verification:</strong> Document-based verification system for student discount eligibility</li>
+            </ul>
+
+            <h3>🤖 AI-Powered Features</h3>
+            <ul class="feature-list">
+                <li><strong>Natural Language Playlist Generation:</strong> Users describe desired playlist in natural language, GPT-4 extracts parameters, system matches songs by audio features</li>
+                <li><strong>Audio Feature Matching:</strong> Tolerance-based matching (20% variance) on valence, energy, and acousticness for flexible playlist creation</li>
+                <li><strong>User Preference Analysis:</strong> Analyzes favorite genres and recently played songs to inform recommendations</li>
+            </ul>
+
+            <h3>⚡ Real-Time Collaboration</h3>
+            <ul class="feature-list">
+                <li><strong>Synchronized Listening Rooms:</strong> WebSocket-based rooms where multiple users listen together in real-time</li>
+                <li><strong>Host Controls:</strong> Only room host can control playback (play, pause, seek) with state broadcast to all listeners</li>
+                <li><strong>Participant Management:</strong> Join/leave notifications, listener capacity limits, and room state persistence</li>
+            </ul>
+
+            <h2>Technical Challenges & Solutions</h2>
+            
+            <div class="challenge-solution">
+                <h3>Challenge: Real-Time Synchronized Playback</h3>
+                <p>
+                    <strong>Problem:</strong> Implementing synchronized music playback across multiple users in real-time requires low-latency bidirectional communication, state management, and host control mechanisms.
+                </p>
+                <p>
+                    <strong>Solution:</strong> Implemented Django Channels with WebSocket consumer (`ListeningRoomConsumer`) for full-duplex communication. Created room state management system tracking current song, playback position, and play state. Host controls are enforced at the WebSocket level, with all state changes broadcast to all participants via Redis channel layers. Implemented automatic reconnection handling and graceful degradation for connection issues.
+                </p>
+            </div>
+
+            <div class="challenge-solution">
+                <h3>Challenge: Code Duplication in Payment Operations</h3>
+                <p>
+                    <strong>Problem:</strong> Multiple payment endpoints shared common Stripe operations (customer creation, subscription retrieval, error handling), leading to 86+ lines of duplicated code across different views.
+                </p>
+                <p>
+                    <strong>Solution:</strong> Created `StripeBaseMixin` base class with 9 reusable methods including `get_or_create_stripe_customer()`, `get_stripe_subscription_id()`, `handle_stripe_error()`, and `check_student_verification()`. All payment views inherit from this mixin, establishing single source of truth and reducing maintenance overhead. This pattern improved code consistency and made error handling uniform across all payment operations.
+                </p>
+            </div>
+
+            <div class="challenge-solution">
+                <h3>Challenge: Audio Processing Performance</h3>
+                <p>
+                    <strong>Problem:</strong> Audio feature extraction using Librosa is CPU-intensive and can block API responses, causing poor user experience when artists upload songs.
+                </p>
+                <p>
+                    <strong>Solution:</strong> Implemented Celery background tasks (`analyze_audio_features`) that process audio files asynchronously. Songs are immediately available after upload, with audio analysis (BPM, valence, energy, acousticness, mood classification) happening in the background. Redis serves as the message broker, and task status can be tracked via Celery monitoring. This ensures API responsiveness while maintaining comprehensive audio metadata.
+                </p>
+            </div>
+
+            <div class="challenge-solution">
+                <h3>Challenge: AI Playlist Generation with Audio Feature Matching</h3>
+                <p>
+                    <strong>Problem:</strong> Converting natural language playlist requests into actual song selections requires understanding user intent, matching songs by audio characteristics, and handling cases where no perfect matches exist.
+                </p>
+                <p>
+                    <strong>Solution:</strong> Integrated OpenAI GPT-4 to parse natural language prompts and extract playlist parameters (mood, energy level, genre preferences). Implemented tolerance-based audio feature matching (20% variance) on valence, energy, and acousticness values. Created fallback mechanisms that analyze user's favorite genres and recently played songs if exact matches aren't found. The system combines AI understanding with audio analysis data to create personalized playlists.
+                </p>
+            </div>
+
+            <div class="challenge-solution">
+                <h3>Challenge: Stripe Webhook Reliability</h3>
+                <p>
+                    <strong>Problem:</strong> Payment webhooks must be processed reliably to keep subscription status synchronized, but network issues, duplicate events, and processing failures can cause inconsistencies.
+                </p>
+                <p>
+                    <strong>Solution:</strong> Implemented idempotent webhook handlers that check for duplicate event processing using Stripe event IDs. Created comprehensive error handling with logging and retry mechanisms. Webhook handlers update user profiles atomically, ensuring subscription status, plan features, and trial periods are always accurate. Used Stripe signature verification for security and implemented separate handlers for different event types (checkout completion, subscription updates, payment success/failure).
+                </p>
+            </div>
+
+            <h2>Architecture Highlights</h2>
+            
+            <h3>Django Apps Structure</h3>
+            <ul class="feature-list">
+                <li><strong>Music App:</strong> 885+ lines in viewsets, 292+ lines in models, 369+ lines in Celery tasks, 347+ lines in WebSocket consumer</li>
+                <li><strong>Payments App:</strong> 491+ lines in subscription views, 226+ lines in base Stripe mixin, 237+ lines in webhook handlers</li>
+                <li><strong>Users App:</strong> 408+ lines in user/profile models, authentication views, and artist follow system</li>
+            </ul>
+
+            <h3>Database Design</h3>
+            <ul class="feature-list">
+                <li><strong>15+ Models:</strong> Song, Album, Genre, Playlist, PlaylistSong, SongLike, FavoriteSong, RecentlyPlayed, ListeningRoom, RoomListener, SongAnalytics, User, UserProfile, SubscriptionPlan, StudentVerification</li>
+                <li><strong>Optimized Relationships:</strong> Foreign keys, many-to-many with through models, UUID primary keys for security</li>
+                <li><strong>Query Optimization:</strong> Strategic use of `select_related()` and `prefetch_related()` to minimize database queries</li>
+            </ul>
+
+            <h2>Project Statistics</h2>
+            <div style="background: var(--clr-bg-section); padding: 2em; border-radius: 10px; margin: 2em 0;">
+                <ul class="feature-list" style="background: transparent; border: none; padding: 0.5em 0;">
+                    <li><strong>Total Backend Code:</strong> 3,724+ lines across multiple Django apps</li>
+                    <li><strong>API Endpoints:</strong> 30+ REST endpoints with custom actions</li>
+                    <li><strong>Database Models:</strong> 15+ models with optimized relationships</li>
+                    <li><strong>Background Tasks:</strong> 5 Celery tasks for async processing</li>
+                    <li><strong>WebSocket Consumers:</strong> 1 real-time consumer for listening rooms</li>
+                    <li><strong>Webhook Handlers:</strong> 6 Stripe event handlers</li>
+                    <li><strong>Code Refactoring:</strong> Eliminated 86+ lines of duplication</li>
+                    <li><strong>External Integrations:</strong> Stripe, OpenAI, Redis, Celery</li>
+                </ul>
+            </div>
+
+            <h2>Technical Skills Demonstrated</h2>
+            <p>
+                This project showcased expertise in building enterprise-scale backend systems with:
+            </p>
+            <ul class="feature-list">
+                <li><strong>Django REST Framework:</strong> Advanced ViewSet patterns, custom actions, nested routing, serializer validation</li>
+                <li><strong>Real-Time Systems:</strong> Django Channels, WebSocket programming, async consumers, channel layers</li>
+                <li><strong>Payment Processing:</strong> Stripe API integration, webhook handling, subscription management, idempotent operations</li>
+                <li><strong>AI Integration:</strong> OpenAI GPT-4 API, natural language processing, intelligent feature matching</li>
+                <li><strong>Audio Processing:</strong> Librosa for feature extraction, audio analysis, mood classification</li>
+                <li><strong>Background Processing:</strong> Celery task queues, Redis message broker, async task management</li>
+                <li><strong>Database Design:</strong> Complex relationships, query optimization, indexing strategies</li>
+                <li><strong>Code Architecture:</strong> Base class inheritance, DRY principles, design patterns, code refactoring</li>
+            </ul>
+
+            <h2>Project Details</h2>
+            <p>
+                <strong>Project:</strong> Spotify Clone - Full-Stack Music Streaming Platform<br>
+                <strong>Role:</strong> Backend Developer<br>
+                <strong>Repository:</strong> <a href="https://github.com/momina2211/Spotify_Clone" target="_blank" rel="noopener noreferrer" style="color: var(--clr-accent); font-weight: bold;">GitHub - Spotify_Clone</a><br>
+                <strong>Tech Stack:</strong> Django 5.2.11, DRF 3.16.1, Python 3.11, Celery, Redis, Channels, Stripe, OpenAI, Librosa<br>
+                <strong>Type:</strong> Full-Stack Application, Personal Project<br>
+                <strong>Status:</strong> Production-Ready Backend
+            </p>
+
+            <div style="margin-top: 3em; padding: 2em; background: linear-gradient(135deg, var(--clr-accent) 0%, var(--clr-accent-secondary) 100%); color: var(--clr-light); border-radius: 10px; text-align: center;">
+                <h3 style="margin-top: 0; color: var(--clr-light);">Key Achievement</h3>
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                    Successfully architected and implemented a production-ready backend supporting real-time collaboration, 
+                    AI-powered features, and payment processing. The codebase demonstrates advanced Django patterns, 
+                    efficient database design, and scalable architecture suitable for enterprise applications.
+                </p>
+                <a href="https://github.com/momina2211/Spotify_Clone" target="_blank" rel="noopener noreferrer" style="display: inline-block; margin-top: 1em; padding: 0.75em 2em; background: rgba(255,255,255,0.2); color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: all 300ms;">
+                    <i class="fab fa-github" style="margin-right: 0.5em;"></i>Explore Code on GitHub
+                </a>
+            </div>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:momina.professional@gmail.com" class="footer__link">momina.professional@gmail.com</a>
+            <p style="margin: 0.5em 0; font-size: 0.9rem; opacity: 0.8;">Bahawalpur, Punjab, Pakistan | +92 322 4485135 | +92 326 9506008</p>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/momina2211" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
