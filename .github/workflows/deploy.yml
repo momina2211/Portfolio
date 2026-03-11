@@ -1,0 +1,55 @@
+name: Deploy Portfolio to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
+      - name: Copy portfolio files to root
+        run: |
+          # Copy HTML, CSS, JS, and image files to root
+          cp -r Scrim-s01u95d/*.html .
+          cp -r Scrim-s01u95d/css .
+          cp -r Scrim-s01u95d/js .
+          cp -r Scrim-s01u95d/img .
+          # Copy package.json (needed for reference, but node_modules won't be copied)
+          cp Scrim-s01u95d/package.json . 2>/dev/null || true
+          # Verify index.html exists
+          if [ ! -f index.html ]; then
+            echo "Error: index.html not found"
+            exit 1
+          fi
+          echo "Files copied successfully. Contents:"
+          ls -la
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

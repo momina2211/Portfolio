@@ -1,14 +1,12 @@
 {
-  "name": "scrim-s01u95d",
-  "description": "https://scrimba.com/build-and-deploy-your-portfolio-c012/~0i",
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Momina Saeed - Backend Developer Portfolio",
   "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8001",
+    "serve": "python3 -m http.server 8002"
   },
-  "dependencies": {
-    "vite": "latest"
-  },
+  "dependencies": {},
   "devDependencies": {}
 }
